@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "poll",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -76,7 +79,7 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'PolisPoller_DB',
+        'NAME': 'PolishPoller_DB',
         'USER': 'polishpoller_dbusr',
         'PASSWORD': 'polishPollerDBpassword1234!@#',
         'HOST': 'localhost',
