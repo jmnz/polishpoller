@@ -18,8 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from .views import PollDetailView
 
+"""
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('polls/<uuid:pk>/', PollDetailView.as_view(), name='poll-detail'),
+    path('polls/<int:pk>/', PollDetailView.as_view(), name='poll-detail')
 ]
+
+
+"""

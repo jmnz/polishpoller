@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Poll(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=200)
     date = models.DateField(auto_now_add=True)
 
